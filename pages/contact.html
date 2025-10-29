@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jamaav Corporation</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="site-header">
+            <div class="site-brand">
+                <div class="logo-container">
+                    <a href="../index.html">
+                        <img src="../images/Jamaav-logo-square.png" alt="Jamaav Corporation Logo">
+                    </a>
+                </div>
+                <div class="site-text">
+                    <div class="company-name">Jamaav Corporation</div>
+                    <div class="tagline">Bridging tech with impact</div>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or inquiries, please fill out the form below or reach us at:</p>
+            <p>Email: <a href="mailto:info@jamaav.com">info@jamaav.com</a></p>
+            <p>Phone: +91 9326942559</p>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Follow us on LinkedIn:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/kharicharan/" target="_blank">Founder's Profile</a></li>
+            <li><a href="https://www.linkedin.com/company/jamaav-corp/" target="_blank">Jamaav Corporation</a></li>
+        </ul>
+        <p>&copy; <span id="currentYear"></span> Jamaav Corporation. All rights reserved.</p>
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
