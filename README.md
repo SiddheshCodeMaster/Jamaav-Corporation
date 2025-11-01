@@ -16,6 +16,7 @@ jamaav-corporation
 │   └── normalize.css
 ├── js
 │   └── main.js
+|   └── slider.js
 └── README.md
 ```
 
