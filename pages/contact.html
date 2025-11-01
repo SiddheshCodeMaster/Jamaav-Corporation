@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="site-header">
             <div class="site-brand">
                 <div class="logo-container">
-                    <a href="../index.html">
-                        <img src="../images/Jamaav-logo-square.png" alt="Jamaav Corporation Logo">
+                    <img src="../images/Jamaav-logo-square.png" alt="Jamaav Corporation Logo">
                     </a>
                 </div>
                 <div class="site-text">
@@ -32,27 +33,53 @@
         </div>
     </header>
     <main>
-        <section>
-            <h2>Get in Touch</h2>
-            <p>If you have any questions or inquiries, please fill out the form below or reach us at:</p>
-            <p>Email: <a href="mailto:info@jamaav.com">info@jamaav.com</a></p>
-            <p>Phone: +91 9326942559</p>
+        <section class="map-section">
+            <h2>Our Office Location</h2>
+            <p>Visit us at our headquarters in Navi Mumbai:</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.5564098553423!2d73.0639631!3d19.0392588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c23e01aae8ff%3A0x9442ccb822164d14!2sGoodwill%20Infinity!5e0!3m2!1sen!2sin!4v1761837697115!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
+        
         <section>
-            <h2>Contact Form</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send Message</button>
+            <h2>Apply to Join Jamaav</h2>
+            <form id="applicantForm">
+                <label for="applicant-name">Name:</label>
+                <input type="text" id="applicant-name" required>
+
+                <label for="applicant-email">Email:</label>
+                <input type="email" id="applicant-email" required>
+
+                <label for="applicant-role">Role Applying For:</label>
+                <input type="text" id="applicant-role" required>
+
+                <label for="applicant-message">Tell us about yourself:</label>
+                <textarea id="applicant-message" required></textarea>
+
+                <button type="submit">Submit Application</button>
             </form>
         </section>
+
+        <section>
+            <h2>Business Enquiry</h2>
+            <form id="businessForm">
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" required>
+
+                <label for="contact-email">Contact Email:</label>
+                <input type="email" id="contact-email" required>
+
+                <label for="project-details">Project Details:</label>
+                <textarea id="project-details" required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+        </section>
+
     </main>
     <footer>
         <p>Follow us on LinkedIn:</p>
@@ -66,4 +93,5 @@
         </script>
     </footer>
 </body>
+
 </html>
